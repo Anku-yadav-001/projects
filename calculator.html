@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .container{
+            border-radius: 5px;
+            justify-content: center;
+            padding-top: 35px;
+            padding-bottom:35px;
+            margin-left: 33%;
+            margin-right: 32%;
+            display: grid;
+            grid-template-columns: repeat(4,90px);
+            grid-template-rows: repeat(5,90px);
+            gap: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        
+        #a{
+            border-radius: 5px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: sans-serif;
+            line-height: 90px; 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+        }
+        #b{
+            border-radius: 5px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: sans-serif;
+            line-height: 90px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-column-end: 5;
+            grid-row-end: 2;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(5, 115, 249);
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    
+    <div class="container">
+        <div id="b"></div>
+        <div id="b"></div>
+        <div id="b"></div>
+        <div id="b"></div>
+        <div id="a">1</div>
+        <div id="a">2</div>
+        <div id="a">3</div>
+        <div id="a" style="background-color: black; color: white;">+</div>
+        <div id="a">4</div>
+        <div id="a">5</div>
+        <div id="a">6</div>
+        <div id="a" style="background-color: black; color: white;">-</div>
+        <div id="a">7</div>
+        <div id="a">8</div>
+        <div id="a">9</div>
+        <div id="a" style="background-color: black; color: white;">*</div>
+        <div id="a" style="background-color: red; color: white;">C</div>
+        <div id="a">0</div>
+        <div id="a" style="background-color: black; color: white;">=</div>
+        <div id="a" style="background-color: black; color: white;">/</div>
+        
+    </div>
+    
+</body>
+</html>
